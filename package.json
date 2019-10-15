@@ -1,0 +1,36 @@
+{
+  "name": "@stepsas/cli",
+  "version": "0.0.1",
+  "description": "CLI for stepsas",
+  "main": "./bin/bin.js",
+  "bin": {
+    "stepsas": "./bin/bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasunstepanyan777/stepsas-cli.git"
+  },
+  "keywords": [
+    "CLI",
+    "single",
+    "page",
+    "stepsas"
+  ],
+  "author": "stepsas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasunstepanyan777/stepsas-cli/issues"
+  },
+  "homepage": "https://github.com/sasunstepanyan777/stepsas-cli#readme",
+  "devDependencies": {
+    "@types/node": "^12.7.12"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
