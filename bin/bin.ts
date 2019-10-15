@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
-const [, , ...args] = process.argv;
+import minimist from 'minimist';
 
-console.log(args);
+const argv = minimist(process.argv.slice(2), {
+  boolean: true,
+  alias: {
+    h: 'help',
+    v: 'version'
+  },
+  '--': true
+});

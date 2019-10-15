@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "start": "node ./bin/bin.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   },
   "homepage": "https://github.com/sasunstepanyan777/stepsas-cli#readme",
   "devDependencies": {
+    "@types/minimist": "^1.2.0",
     "@types/node": "^12.7.12"
   },
   "dependencies": {
