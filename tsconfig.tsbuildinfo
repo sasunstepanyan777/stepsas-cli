@@ -1730,11 +1730,11 @@
       "f:/projects/stepsas-cli/node_modules/@types/html-webpack-plugin/index.d.ts",
       "f:/projects/stepsas-cli/node_modules/@types/mini-css-extract-plugin/index.d.ts",
       "f:/projects/stepsas-cli/node_modules/clean-webpack-plugin/dist/clean-webpack-plugin.d.ts",
-      "f:/projects/stepsas-cli/node_modules/@types/minimatch/index.d.ts",
-      "f:/projects/stepsas-cli/node_modules/@types/glob/index.d.ts",
       "f:/projects/stepsas-cli/webpack/webpack.config.ts",
       "f:/projects/stepsas-cli/constants/constants.ts",
-      "f:/projects/stepsas-cli/commands/run.command.ts"
+      "f:/projects/stepsas-cli/commands/run.command.ts",
+      "f:/projects/stepsas-cli/node_modules/@types/minimatch/index.d.ts",
+      "f:/projects/stepsas-cli/node_modules/@types/glob/index.d.ts"
     ]
   },
   "version": "3.5.3"
