@@ -13,8 +13,6 @@ const argv = minimist(process.argv.slice(2), {
   '--': true
 });
 
-
-
 const command = argv['_'][0];
 
 import(getCommandFilePath(command)).then((com): void => com.default());
