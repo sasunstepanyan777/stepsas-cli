@@ -10,6 +10,7 @@ export default function() {
   });
 
   webpackConfig.context = resolve(process.cwd(), 'src');
+  (webpackConfig.entry as any).polyfills = [resolve(process.cwd(), 'node_modules/@webcomponents/custom-elements/custom-elements.min.js')];
   webpackConfig.output.path = resolve(process.cwd(), 'dist');
 
   const devServerOptions = Object.assign({}, webpackConfig.devServer, {

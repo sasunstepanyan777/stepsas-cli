@@ -20,7 +20,6 @@ export default (env: any): IWebpackConfig => {
 		context: join(__dirname, 'src'),
 
 		entry: {
-			polyfills: ['@webcomponents/custom-elements/custom-elements.min.js'],
 			main: './main.ts',
 			styles: './styles.scss'
 		},
@@ -38,27 +37,27 @@ export default (env: any): IWebpackConfig => {
 			rules: [
 				{
 					test: /.ts$/,
-					exclude: /(node_modules|bower_components|custom-elements)/,
-					loader: 'ts-loader'
+					exclude: /(node_modules|custom-elements)/,
+					loader: require.resolve('ts-loader')
 				},
 				{
 					test: /.html$/,
-					loader: 'html-loader'
+					loader: require.resolve('html-loader')
 				},
 				{
 					test: /(sa|sc|c)ss$/,
 					use: [
 						{
-							loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader
+							loader: devMode ? require.resolve('style-loader') : MiniCssExtractPlugin.loader
 						},
 						{
-							loader: 'css-loader',
+							loader: require.resolve('css-loader'),
 							options: {
 								sourceMap: true
 							}
 						},
 						{
-							loader: 'sass-loader',
+							loader: require.resolve('sass-loader'),
 							options: {
 								sourceMap: true
 							}

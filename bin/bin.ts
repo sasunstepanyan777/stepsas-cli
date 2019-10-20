@@ -15,4 +15,4 @@ const argv = minimist(process.argv.slice(2), {
 
 const command = argv['_'][0];
 
-import(getCommandFilePath(command)).then((com): void => com.default());
+import(getCommandFilePath(command)).then((com): void => com.default(argv['_'][1]));
